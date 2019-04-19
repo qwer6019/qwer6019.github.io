@@ -1,6 +1,5 @@
 ---
 layout: single
-permalink: /jin/
 title: "Trouble Shooting until first post"
 
 ---
@@ -12,7 +11,7 @@ title: "Trouble Shooting until first post"
 
 
 2. Post의 Navigation 주의
- - 우선 /jin/으로 설정하였다.
+ 
 
 
 * Time Zone이 UTC로 Set되어있기 때문에 포스트의 날짜가 future일 수 있다.
