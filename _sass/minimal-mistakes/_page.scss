@@ -39,7 +39,10 @@
     width: 100%;
     clear: both;
 
-    .page__content,
+    .page__content{
+      font-size: $type-size-6;
+    }
+
     .page__meta,
     .page__share {
       position: relative;
@@ -48,6 +51,7 @@
       margin-right: 0;
       width: 100%;
       clear: both;
+
     }
   }
 }
@@ -66,21 +70,29 @@
   font-size: $type-size-4;
 }
 
+/*
+   Page Content
+   ========================================================================== */
+
 .page__content {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
+  li, oi {
+    padding-bottom: 0.3em;
+    margin: 20px 0 0;
+  }
+
   p,
-  li,
   dl {
     font-size: 1em;
   }
 
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
+    margin: 50px 0 $indent-var;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
@@ -518,3 +530,6 @@
     }
   }
 }
+
+
+
