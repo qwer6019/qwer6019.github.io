@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "Youngjin An"
   avatar           : #/assets/images/image1.png"
-  bio              : "Much Happier"
+  bio              : "If you have any questions or find errors, please email me."
   location         : "Republic of Korea"
   email            : "qwer6019@naver.com"
   links:
@@ -301,10 +301,13 @@ defaults:
       author_profile: true
       sidebar:
         nav: "sidebar"
+      # header image
+      excerpt: "Much Happier"
       header:
         overlay_image: /assets/images/mountain_with_galaxy.jpg
         overlay_filter: 0.3
-        show_overlay_excerpt: false
+        show_overlay_excerpt: true
+
 
 
   

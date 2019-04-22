@@ -9,3 +9,7 @@ sidebar:
     children:
       - title: "Realtime Rendering"
         url: /realtime-rendering
+      - title: "Regular Expression"
+        url: /regular-expression
+      - title: "C#"
+        url: /CSharp
