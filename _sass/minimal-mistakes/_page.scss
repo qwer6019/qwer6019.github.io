@@ -532,9 +532,28 @@
 }
 
 .boldcolor { color:#FE1B04;}
-.regexcolor { color:#1ae69c;}
-.stringcolor { color:#ffbf02;}
 
+.regexcolor { color:#1ae69c;}
+.funccolor { color:#1ae69c;}
+
+.stringcolor { color:#ffbf02;}
+.taxonomy { color:#ffbf02;}
+
+.sourcecode {
+  background: #ffffff; 
+  width:auto; 
+  border:solid gray; 
+  border-width:.1em .1em .1em .8em; 
+  padding:.2em .6em;
+}
+.lvalue{
+  color: #008800; 
+  font-weight: bold;
+}
+.rvalue{
+  color: #fb0202;
+  font-weight: bold;
+}
 
 .quotes{
   color: #868686;
@@ -544,4 +563,8 @@
 .quotes__poet{
   color: #868686;
   text-align: center;
+}
+
+.firstindent{
+  margin-left: 2em;
 }

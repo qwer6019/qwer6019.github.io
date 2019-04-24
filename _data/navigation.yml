@@ -13,3 +13,8 @@ sidebar:
         url: /regular-expression
       - title: "C#"
         url: /CSharp
+      - title: "Build Tools"
+        url: /build-tools
+      - title: "Etc"
+        url: /Etc
+
