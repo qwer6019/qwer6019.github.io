@@ -89,18 +89,18 @@ categories: [Blockchain]
 				<li>위 방식을 반복함으로써 계층이 깊어지고 색인 번호를 변경함으로써 자식을 최대 20억 개까지 생성할 수 있다.</li>
 				<li>생성된 자식 개인키는 비결정적 키와 구분할 수 없으며 이는 개인키만으로는 동일 세대, 부모 또는 자식 세대의 키를 얻을 수 없음을 의미한다.</li>
 			</ul>
-			<br><div style="margin-left:3em;"><img src="/assets/images/private-private-key.jpg" alt="none" style="height:35vh"></div><br>
+			<br><div style="margin-left:3em;"><img src="/assets/images/private-private-key.JPG" alt="none" style="height:35vh"></div><br>
 			<br>키를 생성하는데 사용한 요소들 중 키와 체인코드를 결합하여 <b class="taxonomy">확장키(extended key)</b>라고 부르며 확장 개인키와 확장 공개키로 나눌 수 있다. <b class="funccolor">확장 개인키</b>는 개인키와 체인코드를 결합하여 자식 개인키를 생성하며 <b class="funccolor">확장 공개키</b>는 공개키와 체인코드를 결합하여 자식 공개키를 생성한다.
 			<br>따라서 확장 개인키를 이용하면 모든 브랜치의 나머지 부분을 완성할 수 있지만 확장 공개키는 공개키로 이루어진 브랜치 만을 생성할 수 있다.
 			<br><br>자식 공개키는 자식 개인키로부터 직접 생성하거나, 아래 그림과 같이 부모 공개키로부터 얻을 수 있다. 후자 방식으로 HD 지갑의 확장 공개키를 사용하면 해당 브랜치의 공개키만을 얻을 수 있으므로 개인키들을 노출시키지 않는 서버나 앱을 만들 수 있다.
 			<ul>
 				<li>이는 개인키를 보유하지 않으므로 안전하지 않은 서버, 수신 기능만을 가지는 서버에서도 지갑이 사용 가능하다.</li>
 			</ul>
-			<br><div style="margin-left:3em;"><img src="/assets/images/public-public-key.jpg" alt="none" style="height:28vh"></div><br>
+			<br><div style="margin-left:3em;"><img src="/assets/images/public-public-key.JPG" alt="none" style="height:28vh"></div><br>
 			<br>확장 공개키로 공개키 브랜치들을 생성하는 기능은 유용하지만 또한 위험을 수반한다. 확장 공개키를 통해 자식 개인키를 접근할 수 는 없지만 체인코드를 포함하고 있기 때문에 자식 개인키가 유출되는 경우 체인코드와 함께 사용하면 다른 자식 개인키 전부를 얻을 수 있다. 따라서 HD 지갑은 <b class="taxonomy">단절 유도법(hardened derivation)</b>을 사용한다.<br>
 			이는 아래 그림과 같이 부모 공개키가 아닌 부모 개인키를 사용하여 자식 체인코드를 만들어 특정 계층에서 부모 공개키와 자식 체인코드 간의 관계를 끊어버린다.
 			<ul><li>마스터 키의 1세대 자식들은 단절 유도법을 사용하여 생성하는 것이 좋다.</li></ul>
-			<div style="margin-left:3em;"><img src="/assets/images/private-private-discon-key.jpg" alt="none" style="height:35vh"></div><br>
+			<div style="margin-left:3em;"><img src="/assets/images/private-private-discon-key.JPG" alt="none" style="height:35vh"></div><br>
 			<h3>그렇다면 지갑은 이 많은 키들을 어떻게 효율적으로 식별할 수 있을까?</h3>
 			<br>트리 구조의 각 계층은 <b class="boldcolor">/</b> 로 구분되는 경로로 식별되며 <b class="funccolor">마스터 개인키</b>에서 생성된 경우 <b class="funccolor">m</b> 을, <b class="funccolor">마스터 공개키</b>에서 생성된 경우 <b class="funccolor">M</b> 을 사용한다.
 			<br>또한 각 부모가 20억개의 정규 자식과 20억개의 단절 자식을 가질 수 있으므로 용도를 나타내는 특별한 식별자를 사용하여 트리를 구분한 BIP0044를 따라 설정한다.<br>
