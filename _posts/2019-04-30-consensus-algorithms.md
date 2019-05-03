@@ -24,13 +24,23 @@ categories: [Blockchain]
 			<li><b class="taxonomy">Hyperledger Fabric, Ripple, EOS</b> 등</li>
 		</ul>
 	<h2>작업 증명(Proof of Work)</h2>
-		<b class="taxonomy">작업 증명</b>에서 아래와 같은 단점들이 도출됨에 따라 다른 합의 알고리즘들이 제안되었다.
+		<b class="taxonomy">작업 증명</b>방식의 합의 알고리즘은 아래와 같은 단점들이 존재한다.
 		<ul>
-			<li>모든 채굴자가 자신만의 블록을 생성하고 작업 증명을 시도하므로 막대한 에너지가 소비</li>
-			<li>해시 파워를 증가시키기 위해 채굴 풀을 운영하거나 고가의 하드웨어를 설치함으로써 중앙화를 야기</li>
+			<li>모든 채굴자가 거래들을 담은 고유 블록을 생성하고 작업 증명을 시도하므로 막대한 <b class="funccolor">에너지</b>가 소비</li>
+			<li>해시 파워를 증가시키기 위해 채굴 풀을 운영하거나 고가의 하드웨어를 설치함으로써 <b class="funccolor">중앙화</b>를 야기</li>
+			<li><b class="funccolor">확장성</b> 문제</li>
+			<ul>
+				<li><b class="boldcolor">블록 난이도</b>를 낮추어 블록 생성 속도를 증가시키는 경우 <b class="taxonomy">uncle block(stale block)</b> 생성이 증가하므로 채굴자의 기대 수익이 낮아진다. 이는 해시 파워가 높은 마이닝 풀이 유리해지므로 채굴의 중앙화가 심화되어 안전성이 낮아진다.
+				</li>
+				<ul>
+					<li><b class="taxonomy">엉클 블록:</b> 채굴에 성공한 블록이 네트워크를 통해 다른 노드들에게 전파되는데 시간이 걸리므로 또 다른 채굴자가 블록 채굴을 성공할 수 있다. 이러한 블록들을 지칭하며 엉클 블록 또한 유효성을 지니나 메인 체인에 연결되지는 못한다.</li>
+				</ul>
+				<li><b class="boldcolor">블록 크기</b>를 증가시키는 경우<b class="taxonomy">(빅블록)</b> 네트워크 상에서 전송되는 데이터의 양이 늘어나므로 전파 속도가 저하되고 엉클 블록의 생성을 증가시킨다. 이는 마찬가지로 컴퓨팅 파워가 큰 채굴자들에 의해 중앙화될 수 있다.</li>
+			</ul><br>
+			따라서, 다른 방식의 합의 알고리즘들이 등장하였다.
 		</ul>
 	<h2>지분 증명(Proof of Stake)</h2>
-			<b class="funccolor">Peercoin, lisk, nxt</b> 등에서 사용되며 <b class="taxonomy">지분 증명</b>의 합의 과정은 다음과 같다.
+			<b class="taxonomy">지분 증명</b>의 합의 과정은 다음과 같다.
 			<ul>
 				<li>모든 노드는 언제든지 원하는 라운드에 <b class="taxonomy">검증자(validator)</b>가 되어 블록 생성을 시도할 수 있다.</li>
 					<ul><li>검증자가 되기 위해서는 노드는 일부 코인을 네트워크에 묶어두며 이를 <b class="taxonomy">지분</b>이라고 하며, 검증자들로 이루어진 <b class="taxonomy">검증 풀</b>에 추가된다.</li></ul>
