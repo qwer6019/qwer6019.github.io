@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /blockchain/
+permalink: /categories/blockchain/
 taxonomy: Blockchain
 
 ---

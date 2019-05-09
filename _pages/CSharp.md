@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /CSharp/
+permalink: /categories/CSharp/
 taxonomy: CSharp
 
 ---

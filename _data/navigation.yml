@@ -7,17 +7,17 @@ sidebar:
   - title: Categories
     children:
       - title: "Realtime Rendering"
-        url: /realtime-rendering
+        url: /categories/realtime-rendering
       - title: "Regular Expression"
-        url: /regular-expression
+        url: /categories/regular-expression
       - title: "C#"
-        url: /CSharp
+        url: /categories/CSharp
       - title: "Build Tools"
-        url: /build-tools
+        url: /categories/build-tools
       - title: "Blockchain"
-        url: /blockchain
+        url: /categories/blockchain
       - title: "Solidity"
-        url: /solidity
+        url: /categories/solidity
       - title: "Etc"
-        url: /Etc
+        url: /categories/Etc
 

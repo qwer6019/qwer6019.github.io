@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /build-tools/
+permalink: /categories/build-tools/
 taxonomy: build-tools
 
 ---

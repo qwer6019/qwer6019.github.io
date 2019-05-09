@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /regular-expression/
+permalink: /categories/regular-expression/
 taxonomy: regular-expression
 
 ---

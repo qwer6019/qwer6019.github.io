@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /solidity/
+permalink: /categories/solidity/
 taxonomy: Solidity
 
 ---

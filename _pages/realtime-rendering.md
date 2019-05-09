@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /realtime-rendering/
+permalink: /categories/realtime-rendering/
 taxonomy: realtime-rendering
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: pages
 title: " "
-permalink: /Etc/
+permalink: /categories/Etc/
 taxonomy: Etc
 
 ---
