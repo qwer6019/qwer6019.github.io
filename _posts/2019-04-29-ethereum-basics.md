@@ -1,6 +1,6 @@
 ---
 type: posts
-title: "Etereum"
+title: "Etereum Basics"
 categories: [Blockchain]
 
 ---

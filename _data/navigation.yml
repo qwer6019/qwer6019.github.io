@@ -5,7 +5,6 @@ main:
 
 sidebar:
   - title: Categories
-
     children:
       - title: "Realtime Rendering"
         url: /realtime-rendering
@@ -17,6 +16,8 @@ sidebar:
         url: /build-tools
       - title: "Blockchain"
         url: /blockchain
+      - title: "Solidity"
+        url: /solidity
       - title: "Etc"
         url: /Etc
 
