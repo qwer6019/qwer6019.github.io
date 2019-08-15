@@ -10,6 +10,8 @@ sidebar:
         url: /categories/realtime-rendering
       - title: "Regular Expression"
         url: /categories/regular-expression
+      - title: "C++"
+        url: /categories/C++
       - title: "C#"
         url: /categories/CSharp
       - title: "Build Tools"
