@@ -14,6 +14,8 @@ sidebar:
         url: /categories/C++
       - title: "C#"
         url: /categories/CSharp
+      - title: "Vim"
+        url: /categories/vim
       - title: "Build Tools"
         url: /categories/build-tools
       - title: "Blockchain"
